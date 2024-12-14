@@ -56,11 +56,12 @@ public class MemoryAllocationApp {
                             // Print the status of the blocks
                             allocator.printBlockStatus();
                         }else {
-                            System.out.println(red + "\nNo sufficient size of a block found!" + processSize + reset);
+                            System.out.println(red + "\nNo sufficient size of a block found!" + reset);
                         }break;
 
                     case "2":
                         System.out.println(blue + "\n***PROCESS DEALLOCATION***" + reset);
+                        allocator.printBlockStatus();
 
                         // Ask for the task ID to deallocate
                         System.out.print("\nEnter task index to deallocate: ");
